@@ -5,6 +5,9 @@ import { postData } from '../../../api/apiHandler';
 import { config } from '../../../api/config';
 import Cookies from 'js-cookie';
 import { toast } from 'react-toastify';
+import loginImage from '../../../assets/auth/loginImage.jpg';
+
+
 
 const Login = () => {
     const navigate = useNavigate();
@@ -52,7 +55,8 @@ const Login = () => {
                     <h2 className="fw-bold">Welcome Back!</h2>
                     <p>Sign in to access your account</p>
                     <img
-                        src="/src/assets/auth/loginimage.jpg"
+                        // src="/src/assets/auth/loginimage.jpg"
+                         src={loginImage}
                         alt="Login Illustration"
                         className="img-fluid mt-3 login-image rounded"
                     />
