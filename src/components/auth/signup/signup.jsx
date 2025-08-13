@@ -9,6 +9,10 @@ import { Dialog } from 'primereact/dialog';
 import { Button } from 'primereact/button';
 import { InputText } from 'primereact/inputtext';
 
+import signup from '../../../assets/auth/signup.jpg';
+
+
+
 const Signup = () => {
     const navigate = useNavigate();
     const [fullname, setfullname] = useState("")
@@ -174,7 +178,7 @@ const Signup = () => {
                         <div className="row g-0 shadow-lg rounded-4 overflow-hidden">
 
                             <div className="col-lg-6 d-none d-lg-flex align-items-center justify-content-center bg-dark">
-                                <img src="/src/assets/auth/signup.jpg" alt="Signup" className="img-fluid w-100 h-100 object-fit-cover" style={{ opacity: 0.8 }} />
+                                <img src={signup} alt="Signup" className="img-fluid w-100 h-100 object-fit-cover" style={{ opacity: 0.8 }} />
                             </div>
                             <div className="col-lg-6 pt-4 pb-4 p-2 d-flex flex-column justify-content-center bg-light position-relative">
                                 <h3 className="text-center text-dark fw-bold mb-3">Create Your Account</h3>

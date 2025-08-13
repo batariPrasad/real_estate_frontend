@@ -6,6 +6,10 @@ import { config } from "../../../api/config";
 import { InputOtp } from 'primereact/inputotp';
 import { toast } from "react-toastify";
 
+
+import forgotPassword from '../../../assets/auth/forgotPassword.jpg';
+
+
 const ForgotPassword = () => {
     const navigate = useNavigate();
     const [email, setEmail] = useState("");
@@ -93,7 +97,7 @@ const ForgotPassword = () => {
                 {/* Left Side - Image */}
                 <div className="col-lg-6  d-none d-sm-flex align-items-center justify-content-center">
                     <img
-                        src="/src/assets/auth/forgotPassword.jpg"
+                        src={forgotPassword}
                         alt="Forgot Password"
                         className="w-100 h-100"
                         style={{ objectFit: "cover", maxHeight: "100%" }}

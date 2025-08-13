@@ -1,6 +1,8 @@
 import React from 'react';
 import "./carousel.css"
 
+import carousel from '../../assets/carousel/1.jpg';
+
 const Carousel = () => {
   return (
     <div className='vh-70'>
@@ -10,7 +12,7 @@ const Carousel = () => {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src="/src/assets/carousel/1.jpg" className="carousel-img" alt="Slide 1"/>
+            <img src={carousel} className="carousel-img" alt="Slide 1"/>
           </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
