@@ -1,4 +1,5 @@
-const host = "http://localhost:2026";
+// const host = "http://localhost:2026";
+const host = "https://real-estate-8mg4.onrender.com";
 
 export const config = {
   host: `${host}`,
