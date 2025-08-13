@@ -4,7 +4,7 @@ import { InputNumber } from "primereact/inputnumber";
 import { Button } from "primereact/button";
 
 import { FileUpload } from "primereact/fileupload";
-import './addProperty.css'
+import './AddProperty.css'
 import axios from "axios";
 import { config } from "../../api/config";
 import { toast } from "react-toastify";
