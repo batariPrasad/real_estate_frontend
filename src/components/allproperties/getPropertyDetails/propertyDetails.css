@@ -1,0 +1,200 @@
+/* General Styles */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+.property-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding:5px 20px;
+    margin:0px 40px;
+}
+
+.property-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Image Gallery */
+.galleria-container {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.property-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.thumbnail-image {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.galleria-nav-btn {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 50%;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.galleria-nav-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Property Info */
+.property-info {
+    margin-top: 20px;
+}
+
+.property-info h3 {
+    font-size: 20px;
+    color: #444;
+    /* margin-left: 10px;
+     */
+     padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.property-info i {
+    font-size: 18px;
+    color: #007bff;
+}
+
+/* Grid Layout */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.info-grid p {
+    margin: 0;
+    padding: 8px;
+    background: white;
+    border-radius: 6px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #ddd;
+}
+
+.info-grid p i {
+    color: #555;
+}
+
+/* Button */
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn i {
+    margin-right: 8px;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+.scrollable-section {
+    max-height: 450px; /* Show some details initially */
+    overflow-y: auto; /* Enable scrolling */
+    /* padding-right: 10px; */
+    border: 1px solid #ddd; /* Optional: border for better visibility */
+    border-radius: 10px;
+    background: #adaaaa;
+}
+.property-info {
+    margin-top: 0px !important; 
+}
+
+@media (max-width: 768px) {
+    .property-card {
+        width: 100% !important; /* Make the card full width */
+        margin: 0 !important; /* Remove margins */
+        padding: 10px; /* Add some padding for better spacing */
+    }
+
+    .galleria-container {
+        max-width: 100%;
+        height: 250px; /* Reduce height in mobile view */
+        margin-bottom: 10px;
+    }
+
+    .galleria-container img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .property-info {
+        max-height: 300px; /* Reduce height */
+        overflow-y: auto; /* Enable scrolling */
+    }
+
+    .col-lg-7, .col-lg-5 {
+        flex: 1 1 100%; /* Stack columns */
+        margin-top: -40px;
+    }
+}
+@media (max-width: 1024px) {
+    .property-card {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 10px;
+    }
+
+    .galleria-container {
+        max-width: 100%;
+        width: 100%;
+        height: 250px; /* Adjust if needed */
+        margin-bottom: 10px;
+    }
+
+    .galleria-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .property-info {
+        max-height: 300px;
+        overflow-y: auto;
+    }
+
+    .col-lg-7, .col-lg-5, .col-lg-4, .col-lg-3 {
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
+        margin-top: -20px;
+    }
+}
+
